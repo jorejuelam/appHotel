@@ -11,20 +11,51 @@ namespace appHotel
 
         //2
 
-        bool hotel = true;
-        bool Guest = true;
+        bool hotel = false;
+        bool guest = false;
 
         private List<TabPage> roomTabPages = new List<TabPage>();
         private List<TabPage> hotelTabPages = new List<TabPage>();
+
+        private List<TabPage> hotelTabPagesNotExist = new List<TabPage>();
+        private List<TabPage> guestTabPagesNotExist = new List<TabPage>();
+        private List<TabPage> hotelTabPagesExist = new List<TabPage>();
+        private List<TabPage> guestTabPagesExist = new List<TabPage>();
+
         private List<TabPage> guestTabPages = new List<TabPage>();
         private List<TabPage> mHostingTabPages = new List<TabPage>();
         private TabPage checkInTabPage = new TabPage();
         private TabPage checkOutTabPage = new TabPage();
+
         public frmIndex()
         {
             InitializeComponent();
-            verificar();
             getTabPagesByFunctionality();
+            checkFunctions();
+        }
+
+        void fillAuxList()
+        {
+            foreach (TabPage page in guestTabPages)
+            {
+                guestTabPagesExist.Add(page);
+                if (page.Text.Equals("Insert Guest"))
+                {
+                    guestTabPagesNotExist.Add(page);
+                }
+            }
+
+            foreach (TabPage page in hotelTabPages)
+            {
+                if (page.Text.Equals("Insert Hotel"))
+                {
+                    hotelTabPagesNotExist.Add(page);
+                }
+                else
+                {
+                    hotelTabPagesExist.Add(page);
+                }
+            }
         }
 
         void getTabPagesByFunctionality()
@@ -56,6 +87,7 @@ namespace appHotel
                     checkOutTabPage = page;
                 }
             }
+            fillAuxList();
             tcManage.TabPages.Clear();
         }
 
@@ -74,22 +106,61 @@ namespace appHotel
             tcManage.TabPages.Add(page);
         }
 
-        void verificar()
+        void checkFunctions()
         {
-            if (!hotel)
+            if (!hotel && !guest)
             {
-                btnManageGuest.Location = new Point(0, 199);
-                pnDivisorMGuest.Location = new Point(0, 240);
-
                 btnCheckIn.Visible = false;
                 btnManageRoom.Visible = false;
                 btnCheckOut.Visible = false;
                 btnManageHosting.Visible = false;
 
-                pnDivisorEHosting.Visible = false;
+                pnDivisorCheckIn.Visible = false;
                 pnDivisorMRoom.Visible = false;
-                pnDivisorTOHosting.Visible = false;
+                pnDivisorCheckOut.Visible = false;
                 pnDivisorMHosting.Visible = false;
+
+                hotelTabPages = hotelTabPagesNotExist;
+                guestTabPages = guestTabPagesNotExist;
+            }
+            else if (!hotel && guest)
+            {
+                btnCheckIn.Visible = false;
+                btnManageRoom.Visible = false;
+                btnCheckOut.Visible = false;
+                btnManageHosting.Visible = false;
+
+                pnDivisorCheckIn.Visible = false;
+                pnDivisorMRoom.Visible = false;
+                pnDivisorCheckOut.Visible = false;
+                pnDivisorMHosting.Visible = false;
+
+                hotelTabPages = hotelTabPagesNotExist;
+                guestTabPages = guestTabPagesExist;
+            }
+            else if (hotel && !guest)
+            {
+                btnManageRoom.Visible = true;
+
+                pnDivisorMRoom.Visible = true;
+
+                hotelTabPages = hotelTabPagesExist;
+                guestTabPages = guestTabPagesNotExist;
+            }
+            else
+            {
+                btnCheckIn.Visible = true;
+                btnManageRoom.Visible = true;
+                btnCheckOut.Visible = true;
+                btnManageHosting.Visible = true;
+
+                pnDivisorCheckIn.Visible = true;
+                pnDivisorMRoom.Visible = true;
+                pnDivisorCheckOut.Visible = true;
+                pnDivisorMHosting.Visible = true;
+
+                hotelTabPages = hotelTabPagesExist;
+                guestTabPages = guestTabPagesExist;
             }
         }
 
@@ -121,6 +192,25 @@ namespace appHotel
         private void btnManageHosting_Click(object sender, EventArgs e)
         {
             fillTabControlList(mHostingTabPages);
+        }
+
+        private void btnIHEnter_Click(object sender, EventArgs e)
+        {
+            if (!hotel)
+            {
+                hotel = true;
+                checkFunctions();
+                fillTabControlList(hotelTabPages);
+            }
+        }
+        private void btnIGEnter_Click(object sender, EventArgs e)
+        {
+            if (!guest)
+            {
+                guest = true;
+                checkFunctions();
+                fillTabControlList(guestTabPages);
+            }
         }
     }
 }

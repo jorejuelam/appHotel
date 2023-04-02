@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIndex));
             pnMMenu = new Panel();
-            pnDivisorMHosting = new Panel();
-            pnDivisorTOHosting = new Panel();
-            btnCheckOut = new Button();
             btnManageHosting = new Button();
-            pnDivisorMHotel = new Panel();
-            btnManageHotel = new Button();
-            pnDivisorEHosting = new Panel();
-            pnDivisorMRoom = new Panel();
-            pnDivisorMGuest = new Panel();
-            pbIcon = new PictureBox();
-            btnCheckIn = new Button();
+            pnDivisorMHosting = new Panel();
+            btnCheckOut = new Button();
+            pnDivisorCheckOut = new Panel();
             btnManageRoom = new Button();
+            pnDivisorMRoom = new Panel();
             btnManageGuest = new Button();
+            pnDivisorMGuest = new Panel();
+            btnManageHotel = new Button();
+            pnDivisorMHotel = new Panel();
+            btnCheckIn = new Button();
+            pnDivisorCheckIn = new Panel();
+            pbIcon = new PictureBox();
             tcManage = new TabControl();
             tpSeeRooms = new TabPage();
-            btnSRShow = new Button();
-            dtvSRooms = new DataGridView();
+            btnSRShowRoom = new Button();
+            dtgSRRooms = new DataGridView();
             tpInsertRoom = new TabPage();
             pnIR = new Panel();
             cbIRStatus = new ComboBox();
@@ -80,50 +80,80 @@
             tpDeleteRoom = new TabPage();
             pnDR = new Panel();
             btnDRDelete = new Button();
-            cbCRCode = new ComboBox();
+            cbDRRoom = new ComboBox();
             tpSeeHotel = new TabPage();
+            lbSHName = new Label();
+            btnSHSRooms = new Button();
+            dtgSHRooms = new DataGridView();
             tpInsertHotel = new TabPage();
-            panel2 = new Panel();
-            comboBox2 = new ComboBox();
-            textBox5 = new TextBox();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            button2 = new Button();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
+            btnIHEnter = new Button();
+            pnINR = new Panel();
+            cbIHRStatus = new ComboBox();
+            txtIGRCapacity = new TextBox();
+            lbIHRCapacity = new Label();
+            lbIHRCode = new Label();
+            btnIHRAdd = new Button();
+            txtIHRDescription = new TextBox();
+            txtIHRCode = new TextBox();
+            txtIHRPrice = new TextBox();
+            lbIHRDescription = new Label();
+            lbIHRStatus = new Label();
+            lbIHRPrice = new Label();
+            pnIHN = new Panel();
+            lbIHName = new Label();
+            txtIHName = new TextBox();
             tpAlterHotel = new TabPage();
+            pnAHI = new Panel();
+            btnAHIAlter = new Button();
+            lbAHIName = new Label();
+            txtAHIName = new TextBox();
             tpDeleteHotel = new TabPage();
+            pnDH = new Panel();
+            btnDHDelete = new Button();
             tpAlterGuest = new TabPage();
-            tpDeleteGuest = new TabPage();
-            tpInsertGuest = new TabPage();
             panel1 = new Panel();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            button1 = new Button();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            btnAGISearch = new Button();
+            pnCInfoAGI = new Panel();
+            txtAGIEmail = new TextBox();
+            txtAGIName = new TextBox();
+            lbAGIName = new Label();
+            lbAGIId = new Label();
+            btnAGIAlter = new Button();
+            txtAGIId = new TextBox();
+            txtAGIPhone = new TextBox();
+            lbAGIEmail = new Label();
+            lbAGIPhone = new Label();
+            txtAGISearchCode = new TextBox();
+            lbAGISearchCode = new Label();
+            tpDeleteGuest = new TabPage();
+            pnDG = new Panel();
+            btnDGDelete = new Button();
+            cbDGGuest = new ComboBox();
+            tpInsertGuest = new TabPage();
+            pnIG = new Panel();
+            txtIGEmail = new TextBox();
+            txtIGName = new TextBox();
+            lbIGName = new Label();
+            lbIGId = new Label();
+            btnIGEnter = new Button();
+            txtIGId = new TextBox();
+            txtIGPhone = new TextBox();
+            lbIGEmail = new Label();
+            lbIGPhone = new Label();
             tpSeeGuest = new TabPage();
+            btnSGShowGuest = new Button();
+            dtgSGGuests = new DataGridView();
             tpCheckIn = new TabPage();
             tpCheckOut = new TabPage();
             tpAlterHosting = new TabPage();
             tpSeeHosting = new TabPage();
+            btnSHShowHosting = new Button();
+            dtgSHHostings = new DataGridView();
             pnMMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIcon).BeginInit();
             tcManage.SuspendLayout();
             tpSeeRooms.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dtvSRooms).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgSRRooms).BeginInit();
             tpInsertRoom.SuspendLayout();
             pnIR.SuspendLayout();
             tpAlterRoom.SuspendLayout();
@@ -131,28 +161,44 @@
             pnCInfoARI.SuspendLayout();
             tpDeleteRoom.SuspendLayout();
             pnDR.SuspendLayout();
+            tpSeeHotel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dtgSHRooms).BeginInit();
             tpInsertHotel.SuspendLayout();
-            panel2.SuspendLayout();
-            tpInsertGuest.SuspendLayout();
+            pnINR.SuspendLayout();
+            pnIHN.SuspendLayout();
+            tpAlterHotel.SuspendLayout();
+            pnAHI.SuspendLayout();
+            tpDeleteHotel.SuspendLayout();
+            pnDH.SuspendLayout();
+            tpAlterGuest.SuspendLayout();
             panel1.SuspendLayout();
+            pnCInfoAGI.SuspendLayout();
+            tpDeleteGuest.SuspendLayout();
+            pnDG.SuspendLayout();
+            tpInsertGuest.SuspendLayout();
+            pnIG.SuspendLayout();
+            tpSeeGuest.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dtgSGGuests).BeginInit();
+            tpSeeHosting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dtgSHHostings).BeginInit();
             SuspendLayout();
             // 
             // pnMMenu
             // 
             pnMMenu.BackColor = Color.Silver;
-            pnMMenu.Controls.Add(pnDivisorMHosting);
-            pnMMenu.Controls.Add(pnDivisorTOHosting);
             pnMMenu.Controls.Add(btnCheckOut);
-            pnMMenu.Controls.Add(btnManageHosting);
-            pnMMenu.Controls.Add(pnDivisorMHotel);
-            pnMMenu.Controls.Add(btnManageHotel);
-            pnMMenu.Controls.Add(pnDivisorEHosting);
-            pnMMenu.Controls.Add(pnDivisorMRoom);
-            pnMMenu.Controls.Add(pnDivisorMGuest);
-            pnMMenu.Controls.Add(pbIcon);
-            pnMMenu.Controls.Add(btnCheckIn);
+            pnMMenu.Controls.Add(pnDivisorCheckOut);
             pnMMenu.Controls.Add(btnManageRoom);
+            pnMMenu.Controls.Add(pnDivisorMRoom);
+            pnMMenu.Controls.Add(btnCheckIn);
+            pnMMenu.Controls.Add(pnDivisorCheckIn);
+            pnMMenu.Controls.Add(btnManageHosting);
             pnMMenu.Controls.Add(btnManageGuest);
+            pnMMenu.Controls.Add(pnDivisorMHosting);
+            pnMMenu.Controls.Add(pnDivisorMGuest);
+            pnMMenu.Controls.Add(btnManageHotel);
+            pnMMenu.Controls.Add(pnDivisorMHotel);
+            pnMMenu.Controls.Add(pbIcon);
             pnMMenu.Dock = DockStyle.Left;
             pnMMenu.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             pnMMenu.ForeColor = Color.Black;
@@ -161,39 +207,11 @@
             pnMMenu.Size = new Size(178, 490);
             pnMMenu.TabIndex = 1;
             // 
-            // pnDivisorMHosting
-            // 
-            pnDivisorMHosting.BackColor = Color.Black;
-            pnDivisorMHosting.Location = new Point(0, 438);
-            pnDivisorMHosting.Name = "pnDivisorMHosting";
-            pnDivisorMHosting.Size = new Size(178, 2);
-            pnDivisorMHosting.TabIndex = 12;
-            // 
-            // pnDivisorTOHosting
-            // 
-            pnDivisorTOHosting.BackColor = Color.Black;
-            pnDivisorTOHosting.Location = new Point(0, 289);
-            pnDivisorTOHosting.Name = "pnDivisorTOHosting";
-            pnDivisorTOHosting.Size = new Size(178, 2);
-            pnDivisorTOHosting.TabIndex = 7;
-            // 
-            // btnCheckOut
-            // 
-            btnCheckOut.FlatAppearance.BorderSize = 0;
-            btnCheckOut.FlatStyle = FlatStyle.Flat;
-            btnCheckOut.Location = new Point(0, 248);
-            btnCheckOut.Name = "btnCheckOut";
-            btnCheckOut.Size = new Size(178, 43);
-            btnCheckOut.TabIndex = 4;
-            btnCheckOut.Text = "Check Out";
-            btnCheckOut.UseVisualStyleBackColor = true;
-            btnCheckOut.Click += btnCheckOut_Click;
-            // 
             // btnManageHosting
             // 
             btnManageHosting.FlatAppearance.BorderSize = 0;
             btnManageHosting.FlatStyle = FlatStyle.Flat;
-            btnManageHosting.Location = new Point(0, 397);
+            btnManageHosting.Location = new Point(0, 305);
             btnManageHosting.Name = "btnManageHosting";
             btnManageHosting.Size = new Size(178, 43);
             btnManageHosting.TabIndex = 11;
@@ -201,19 +219,79 @@
             btnManageHosting.UseVisualStyleBackColor = true;
             btnManageHosting.Click += btnManageHosting_Click;
             // 
-            // pnDivisorMHotel
+            // pnDivisorMHosting
             // 
-            pnDivisorMHotel.BackColor = Color.Black;
-            pnDivisorMHotel.Location = new Point(0, 191);
-            pnDivisorMHotel.Name = "pnDivisorMHotel";
-            pnDivisorMHotel.Size = new Size(178, 2);
-            pnDivisorMHotel.TabIndex = 8;
+            pnDivisorMHosting.BackColor = Color.Black;
+            pnDivisorMHosting.Location = new Point(0, 349);
+            pnDivisorMHosting.Name = "pnDivisorMHosting";
+            pnDivisorMHosting.Size = new Size(178, 2);
+            pnDivisorMHosting.TabIndex = 12;
+            // 
+            // btnCheckOut
+            // 
+            btnCheckOut.FlatAppearance.BorderSize = 0;
+            btnCheckOut.FlatStyle = FlatStyle.Flat;
+            btnCheckOut.Location = new Point(0, 409);
+            btnCheckOut.Name = "btnCheckOut";
+            btnCheckOut.Size = new Size(178, 43);
+            btnCheckOut.TabIndex = 4;
+            btnCheckOut.Text = "Check Out";
+            btnCheckOut.UseVisualStyleBackColor = true;
+            btnCheckOut.Click += btnCheckOut_Click;
+            // 
+            // pnDivisorCheckOut
+            // 
+            pnDivisorCheckOut.BackColor = Color.Black;
+            pnDivisorCheckOut.Location = new Point(0, 452);
+            pnDivisorCheckOut.Name = "pnDivisorCheckOut";
+            pnDivisorCheckOut.Size = new Size(178, 2);
+            pnDivisorCheckOut.TabIndex = 7;
+            // 
+            // btnManageRoom
+            // 
+            btnManageRoom.FlatAppearance.BorderSize = 0;
+            btnManageRoom.FlatStyle = FlatStyle.Flat;
+            btnManageRoom.Location = new Point(0, 253);
+            btnManageRoom.Name = "btnManageRoom";
+            btnManageRoom.Size = new Size(178, 43);
+            btnManageRoom.TabIndex = 2;
+            btnManageRoom.Text = "Manage Room";
+            btnManageRoom.UseVisualStyleBackColor = true;
+            btnManageRoom.Click += btnManageRoom_Click;
+            // 
+            // pnDivisorMRoom
+            // 
+            pnDivisorMRoom.BackColor = Color.Black;
+            pnDivisorMRoom.Location = new Point(0, 297);
+            pnDivisorMRoom.Name = "pnDivisorMRoom";
+            pnDivisorMRoom.Size = new Size(178, 2);
+            pnDivisorMRoom.TabIndex = 7;
+            // 
+            // btnManageGuest
+            // 
+            btnManageGuest.FlatAppearance.BorderSize = 0;
+            btnManageGuest.FlatStyle = FlatStyle.Flat;
+            btnManageGuest.Location = new Point(0, 201);
+            btnManageGuest.Name = "btnManageGuest";
+            btnManageGuest.Size = new Size(178, 43);
+            btnManageGuest.TabIndex = 1;
+            btnManageGuest.Text = "Manage Guest";
+            btnManageGuest.UseVisualStyleBackColor = true;
+            btnManageGuest.Click += btnManageGuest_Click;
+            // 
+            // pnDivisorMGuest
+            // 
+            pnDivisorMGuest.BackColor = Color.Black;
+            pnDivisorMGuest.Location = new Point(0, 245);
+            pnDivisorMGuest.Name = "pnDivisorMGuest";
+            pnDivisorMGuest.Size = new Size(178, 2);
+            pnDivisorMGuest.TabIndex = 6;
             // 
             // btnManageHotel
             // 
             btnManageHotel.FlatAppearance.BorderSize = 0;
             btnManageHotel.FlatStyle = FlatStyle.Flat;
-            btnManageHotel.Location = new Point(0, 150);
+            btnManageHotel.Location = new Point(0, 149);
             btnManageHotel.Name = "btnManageHotel";
             btnManageHotel.Size = new Size(178, 43);
             btnManageHotel.TabIndex = 10;
@@ -221,29 +299,33 @@
             btnManageHotel.UseVisualStyleBackColor = true;
             btnManageHotel.Click += btnManageHotel_Click;
             // 
-            // pnDivisorEHosting
+            // pnDivisorMHotel
             // 
-            pnDivisorEHosting.BackColor = Color.Black;
-            pnDivisorEHosting.Location = new Point(0, 240);
-            pnDivisorEHosting.Name = "pnDivisorEHosting";
-            pnDivisorEHosting.Size = new Size(178, 2);
-            pnDivisorEHosting.TabIndex = 8;
+            pnDivisorMHotel.BackColor = Color.Black;
+            pnDivisorMHotel.Location = new Point(0, 193);
+            pnDivisorMHotel.Name = "pnDivisorMHotel";
+            pnDivisorMHotel.Size = new Size(178, 2);
+            pnDivisorMHotel.TabIndex = 8;
             // 
-            // pnDivisorMRoom
+            // btnCheckIn
             // 
-            pnDivisorMRoom.BackColor = Color.Black;
-            pnDivisorMRoom.Location = new Point(0, 338);
-            pnDivisorMRoom.Name = "pnDivisorMRoom";
-            pnDivisorMRoom.Size = new Size(178, 2);
-            pnDivisorMRoom.TabIndex = 7;
+            btnCheckIn.FlatAppearance.BorderSize = 0;
+            btnCheckIn.FlatStyle = FlatStyle.Flat;
+            btnCheckIn.Location = new Point(0, 357);
+            btnCheckIn.Name = "btnCheckIn";
+            btnCheckIn.Size = new Size(178, 43);
+            btnCheckIn.TabIndex = 3;
+            btnCheckIn.Text = "Check In";
+            btnCheckIn.UseVisualStyleBackColor = true;
+            btnCheckIn.Click += btnCheckIn_Click;
             // 
-            // pnDivisorMGuest
+            // pnDivisorCheckIn
             // 
-            pnDivisorMGuest.BackColor = Color.Black;
-            pnDivisorMGuest.Location = new Point(0, 387);
-            pnDivisorMGuest.Name = "pnDivisorMGuest";
-            pnDivisorMGuest.Size = new Size(178, 2);
-            pnDivisorMGuest.TabIndex = 6;
+            pnDivisorCheckIn.BackColor = Color.Black;
+            pnDivisorCheckIn.Location = new Point(0, 401);
+            pnDivisorCheckIn.Name = "pnDivisorCheckIn";
+            pnDivisorCheckIn.Size = new Size(178, 2);
+            pnDivisorCheckIn.TabIndex = 8;
             // 
             // pbIcon
             // 
@@ -254,42 +336,6 @@
             pbIcon.Size = new Size(172, 121);
             pbIcon.TabIndex = 5;
             pbIcon.TabStop = false;
-            // 
-            // btnCheckIn
-            // 
-            btnCheckIn.FlatAppearance.BorderSize = 0;
-            btnCheckIn.FlatStyle = FlatStyle.Flat;
-            btnCheckIn.Location = new Point(0, 199);
-            btnCheckIn.Name = "btnCheckIn";
-            btnCheckIn.Size = new Size(178, 43);
-            btnCheckIn.TabIndex = 3;
-            btnCheckIn.Text = "Check In";
-            btnCheckIn.UseVisualStyleBackColor = true;
-            btnCheckIn.Click += btnCheckIn_Click;
-            // 
-            // btnManageRoom
-            // 
-            btnManageRoom.FlatAppearance.BorderSize = 0;
-            btnManageRoom.FlatStyle = FlatStyle.Flat;
-            btnManageRoom.Location = new Point(0, 297);
-            btnManageRoom.Name = "btnManageRoom";
-            btnManageRoom.Size = new Size(178, 43);
-            btnManageRoom.TabIndex = 2;
-            btnManageRoom.Text = "Manage Room";
-            btnManageRoom.UseVisualStyleBackColor = true;
-            btnManageRoom.Click += btnManageRoom_Click;
-            // 
-            // btnManageGuest
-            // 
-            btnManageGuest.FlatAppearance.BorderSize = 0;
-            btnManageGuest.FlatStyle = FlatStyle.Flat;
-            btnManageGuest.Location = new Point(0, 346);
-            btnManageGuest.Name = "btnManageGuest";
-            btnManageGuest.Size = new Size(178, 43);
-            btnManageGuest.TabIndex = 1;
-            btnManageGuest.Text = "Manage Guest";
-            btnManageGuest.UseVisualStyleBackColor = true;
-            btnManageGuest.Click += btnManageGuest_Click;
             // 
             // tcManage
             // 
@@ -312,7 +358,6 @@
             tcManage.Dock = DockStyle.Right;
             tcManage.Location = new Point(178, 0);
             tcManage.Margin = new Padding(0);
-            tcManage.Multiline = true;
             tcManage.Name = "tcManage";
             tcManage.SelectedIndex = 0;
             tcManage.Size = new Size(630, 490);
@@ -321,44 +366,44 @@
             // 
             // tpSeeRooms
             // 
-            tpSeeRooms.Controls.Add(btnSRShow);
-            tpSeeRooms.Controls.Add(dtvSRooms);
-            tpSeeRooms.Location = new Point(4, 64);
+            tpSeeRooms.Controls.Add(btnSRShowRoom);
+            tpSeeRooms.Controls.Add(dtgSRRooms);
+            tpSeeRooms.Location = new Point(4, 24);
             tpSeeRooms.Name = "tpSeeRooms";
             tpSeeRooms.Padding = new Padding(3);
-            tpSeeRooms.Size = new Size(622, 422);
+            tpSeeRooms.Size = new Size(622, 462);
             tpSeeRooms.TabIndex = 1;
             tpSeeRooms.Text = "See Rooms";
             tpSeeRooms.UseVisualStyleBackColor = true;
             // 
-            // btnSRShow
+            // btnSRShowRoom
             // 
-            btnSRShow.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSRShow.Location = new Point(245, 31);
-            btnSRShow.Name = "btnSRShow";
-            btnSRShow.Size = new Size(125, 39);
-            btnSRShow.TabIndex = 1;
-            btnSRShow.Text = "Show Rooms";
-            btnSRShow.UseVisualStyleBackColor = true;
+            btnSRShowRoom.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSRShowRoom.Location = new Point(249, 26);
+            btnSRShowRoom.Name = "btnSRShowRoom";
+            btnSRShowRoom.Size = new Size(125, 39);
+            btnSRShowRoom.TabIndex = 1;
+            btnSRShowRoom.Text = "Show Rooms";
+            btnSRShowRoom.UseVisualStyleBackColor = true;
             // 
-            // dtvSRooms
+            // dtgSRRooms
             // 
-            dtvSRooms.AllowUserToAddRows = false;
-            dtvSRooms.AllowUserToDeleteRows = false;
-            dtvSRooms.AllowUserToResizeColumns = false;
-            dtvSRooms.AllowUserToResizeRows = false;
-            dtvSRooms.BackgroundColor = Color.Gainsboro;
-            dtvSRooms.BorderStyle = BorderStyle.None;
-            dtvSRooms.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtvSRooms.GridColor = Color.Silver;
-            dtvSRooms.Location = new Point(27, 102);
-            dtvSRooms.Name = "dtvSRooms";
-            dtvSRooms.ReadOnly = true;
-            dtvSRooms.RowHeadersVisible = false;
-            dtvSRooms.RowTemplate.Height = 25;
-            dtvSRooms.ShowCellToolTips = false;
-            dtvSRooms.Size = new Size(561, 300);
-            dtvSRooms.TabIndex = 0;
+            dtgSRRooms.AllowUserToAddRows = false;
+            dtgSRRooms.AllowUserToDeleteRows = false;
+            dtgSRRooms.AllowUserToResizeColumns = false;
+            dtgSRRooms.AllowUserToResizeRows = false;
+            dtgSRRooms.BackgroundColor = Color.Gainsboro;
+            dtgSRRooms.BorderStyle = BorderStyle.None;
+            dtgSRRooms.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgSRRooms.GridColor = Color.Silver;
+            dtgSRRooms.Location = new Point(31, 97);
+            dtgSRRooms.Name = "dtgSRRooms";
+            dtgSRRooms.ReadOnly = true;
+            dtgSRRooms.RowHeadersVisible = false;
+            dtgSRRooms.RowTemplate.Height = 25;
+            dtgSRRooms.ShowCellToolTips = false;
+            dtgSRRooms.Size = new Size(561, 300);
+            dtgSRRooms.TabIndex = 0;
             // 
             // tpInsertRoom
             // 
@@ -386,7 +431,7 @@
             pnIR.Controls.Add(lbIRDescription);
             pnIR.Controls.Add(lbRStatus);
             pnIR.Controls.Add(lbIRPrice);
-            pnIR.Location = new Point(35, 85);
+            pnIR.Location = new Point(35, 99);
             pnIR.Name = "pnIR";
             pnIR.Size = new Size(545, 264);
             pnIR.TabIndex = 4;
@@ -518,7 +563,7 @@
             pnARI.Controls.Add(txtARICode);
             pnARI.Controls.Add(lbARICode);
             pnARI.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            pnARI.Location = new Point(31, 29);
+            pnARI.Location = new Point(35, 49);
             pnARI.Name = "pnARI";
             pnARI.Size = new Size(553, 364);
             pnARI.TabIndex = 0;
@@ -672,9 +717,9 @@
             pnDR.BackColor = Color.WhiteSmoke;
             pnDR.BorderStyle = BorderStyle.FixedSingle;
             pnDR.Controls.Add(btnDRDelete);
-            pnDR.Controls.Add(cbCRCode);
+            pnDR.Controls.Add(cbDRRoom);
             pnDR.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            pnDR.Location = new Point(35, 142);
+            pnDR.Location = new Point(39, 156);
             pnDR.Name = "pnDR";
             pnDR.Size = new Size(545, 151);
             pnDR.TabIndex = 5;
@@ -689,16 +734,19 @@
             btnDRDelete.Text = "Delete";
             btnDRDelete.UseVisualStyleBackColor = true;
             // 
-            // cbCRCode
+            // cbDRRoom
             // 
-            cbCRCode.FormattingEnabled = true;
-            cbCRCode.Location = new Point(207, 44);
-            cbCRCode.Name = "cbCRCode";
-            cbCRCode.Size = new Size(129, 25);
-            cbCRCode.TabIndex = 0;
+            cbDRRoom.FormattingEnabled = true;
+            cbDRRoom.Location = new Point(207, 44);
+            cbDRRoom.Name = "cbDRRoom";
+            cbDRRoom.Size = new Size(129, 25);
+            cbDRRoom.TabIndex = 0;
             // 
             // tpSeeHotel
             // 
+            tpSeeHotel.Controls.Add(lbSHName);
+            tpSeeHotel.Controls.Add(btnSHSRooms);
+            tpSeeHotel.Controls.Add(dtgSHRooms);
             tpSeeHotel.Location = new Point(4, 24);
             tpSeeHotel.Name = "tpSeeHotel";
             tpSeeHotel.Size = new Size(622, 462);
@@ -706,9 +754,51 @@
             tpSeeHotel.Text = "See Hotel";
             tpSeeHotel.UseVisualStyleBackColor = true;
             // 
+            // lbSHName
+            // 
+            lbSHName.FlatStyle = FlatStyle.Flat;
+            lbSHName.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbSHName.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Assertive;
+            lbSHName.Location = new Point(83, 41);
+            lbSHName.Name = "lbSHName";
+            lbSHName.Size = new Size(456, 23);
+            lbSHName.TabIndex = 4;
+            lbSHName.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // btnSHSRooms
+            // 
+            btnSHSRooms.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSHSRooms.Location = new Point(249, 89);
+            btnSHSRooms.Name = "btnSHSRooms";
+            btnSHSRooms.Size = new Size(125, 39);
+            btnSHSRooms.TabIndex = 3;
+            btnSHSRooms.Text = "Show Rooms";
+            btnSHSRooms.UseVisualStyleBackColor = true;
+            // 
+            // dtgSHRooms
+            // 
+            dtgSHRooms.AllowUserToAddRows = false;
+            dtgSHRooms.AllowUserToDeleteRows = false;
+            dtgSHRooms.AllowUserToResizeColumns = false;
+            dtgSHRooms.AllowUserToResizeRows = false;
+            dtgSHRooms.BackgroundColor = Color.Gainsboro;
+            dtgSHRooms.BorderStyle = BorderStyle.None;
+            dtgSHRooms.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgSHRooms.GridColor = Color.Silver;
+            dtgSHRooms.Location = new Point(31, 159);
+            dtgSHRooms.Name = "dtgSHRooms";
+            dtgSHRooms.ReadOnly = true;
+            dtgSHRooms.RowHeadersVisible = false;
+            dtgSHRooms.RowTemplate.Height = 25;
+            dtgSHRooms.ShowCellToolTips = false;
+            dtgSHRooms.Size = new Size(561, 258);
+            dtgSHRooms.TabIndex = 2;
+            // 
             // tpInsertHotel
             // 
-            tpInsertHotel.Controls.Add(panel2);
+            tpInsertHotel.Controls.Add(btnIHEnter);
+            tpInsertHotel.Controls.Add(pnINR);
+            tpInsertHotel.Controls.Add(pnIHN);
             tpInsertHotel.Location = new Point(4, 24);
             tpInsertHotel.Name = "tpInsertHotel";
             tpInsertHotel.Size = new Size(622, 462);
@@ -716,352 +806,643 @@
             tpInsertHotel.Text = "Insert Hotel";
             tpInsertHotel.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // btnIHEnter
             // 
-            panel2.BackColor = Color.WhiteSmoke;
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(comboBox2);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(textBox7);
-            panel2.Controls.Add(textBox8);
-            panel2.Controls.Add(label10);
-            panel2.Controls.Add(label11);
-            panel2.Controls.Add(label12);
-            panel2.Location = new Point(39, 79);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(545, 264);
-            panel2.TabIndex = 5;
+            btnIHEnter.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIHEnter.Location = new Point(249, 378);
+            btnIHEnter.Name = "btnIHEnter";
+            btnIHEnter.Size = new Size(125, 34);
+            btnIHEnter.TabIndex = 15;
+            btnIHEnter.Text = "Enter";
+            btnIHEnter.UseVisualStyleBackColor = true;
+            btnIHEnter.Click += btnIHEnter_Click;
             // 
-            // comboBox2
+            // pnINR
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Available" });
-            comboBox2.Location = new Point(359, 67);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(160, 23);
-            comboBox2.TabIndex = 14;
+            pnINR.BackColor = Color.WhiteSmoke;
+            pnINR.BorderStyle = BorderStyle.FixedSingle;
+            pnINR.Controls.Add(cbIHRStatus);
+            pnINR.Controls.Add(txtIGRCapacity);
+            pnINR.Controls.Add(lbIHRCapacity);
+            pnINR.Controls.Add(lbIHRCode);
+            pnINR.Controls.Add(btnIHRAdd);
+            pnINR.Controls.Add(txtIHRDescription);
+            pnINR.Controls.Add(txtIHRCode);
+            pnINR.Controls.Add(txtIHRPrice);
+            pnINR.Controls.Add(lbIHRDescription);
+            pnINR.Controls.Add(lbIHRStatus);
+            pnINR.Controls.Add(lbIHRPrice);
+            pnINR.Location = new Point(39, 138);
+            pnINR.Name = "pnINR";
+            pnINR.Size = new Size(545, 228);
+            pnINR.TabIndex = 6;
             // 
-            // textBox5
+            // cbIHRStatus
             // 
-            textBox5.Location = new Point(359, 21);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(160, 23);
-            textBox5.TabIndex = 13;
+            cbIHRStatus.FormattingEnabled = true;
+            cbIHRStatus.Items.AddRange(new object[] { "Available" });
+            cbIHRStatus.Location = new Point(359, 62);
+            cbIHRStatus.Name = "cbIHRStatus";
+            cbIHRStatus.Size = new Size(160, 23);
+            cbIHRStatus.TabIndex = 14;
             // 
-            // label7
+            // txtIGRCapacity
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(291, 22);
-            label7.Name = "label7";
-            label7.Size = new Size(62, 17);
-            label7.TabIndex = 12;
-            label7.Text = "Capacity:";
+            txtIGRCapacity.Location = new Point(359, 21);
+            txtIGRCapacity.Name = "txtIGRCapacity";
+            txtIGRCapacity.Size = new Size(160, 23);
+            txtIGRCapacity.TabIndex = 13;
             // 
-            // label8
+            // lbIHRCapacity
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(21, 22);
-            label8.Name = "label8";
-            label8.Size = new Size(42, 17);
-            label8.TabIndex = 10;
-            label8.Text = "Code:";
+            lbIHRCapacity.AutoSize = true;
+            lbIHRCapacity.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIHRCapacity.Location = new Point(291, 22);
+            lbIHRCapacity.Name = "lbIHRCapacity";
+            lbIHRCapacity.Size = new Size(62, 17);
+            lbIHRCapacity.TabIndex = 12;
+            lbIHRCapacity.Text = "Capacity:";
             // 
-            // label9
+            // lbIHRCode
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(20, 176);
-            label9.Name = "label9";
-            label9.Size = new Size(0, 15);
-            label9.TabIndex = 9;
+            lbIHRCode.AutoSize = true;
+            lbIHRCode.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIHRCode.Location = new Point(21, 22);
+            lbIHRCode.Name = "lbIHRCode";
+            lbIHRCode.Size = new Size(42, 17);
+            lbIHRCode.TabIndex = 10;
+            lbIHRCode.Text = "Code:";
             // 
-            // button2
+            // btnIHRAdd
             // 
-            button2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(209, 209);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 34);
-            button2.TabIndex = 8;
-            button2.Text = "Enter";
-            button2.UseVisualStyleBackColor = true;
+            btnIHRAdd.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIHRAdd.Location = new Point(209, 182);
+            btnIHRAdd.Name = "btnIHRAdd";
+            btnIHRAdd.Size = new Size(125, 34);
+            btnIHRAdd.TabIndex = 8;
+            btnIHRAdd.Text = "Add";
+            btnIHRAdd.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // txtIHRDescription
             // 
-            textBox6.Location = new Point(164, 137);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(214, 56);
-            textBox6.TabIndex = 7;
+            txtIHRDescription.Location = new Point(164, 120);
+            txtIHRDescription.Multiline = true;
+            txtIHRDescription.Name = "txtIHRDescription";
+            txtIHRDescription.Size = new Size(214, 56);
+            txtIHRDescription.TabIndex = 7;
             // 
-            // textBox7
+            // txtIHRCode
             // 
-            textBox7.Location = new Point(106, 21);
-            textBox7.Name = "textBox7";
-            textBox7.ReadOnly = true;
-            textBox7.Size = new Size(160, 23);
-            textBox7.TabIndex = 5;
+            txtIHRCode.Location = new Point(106, 21);
+            txtIHRCode.Name = "txtIHRCode";
+            txtIHRCode.ReadOnly = true;
+            txtIHRCode.Size = new Size(160, 23);
+            txtIHRCode.TabIndex = 5;
             // 
-            // textBox8
+            // txtIHRPrice
             // 
-            textBox8.Location = new Point(106, 68);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(160, 23);
-            textBox8.TabIndex = 4;
+            txtIHRPrice.Location = new Point(106, 63);
+            txtIHRPrice.Name = "txtIHRPrice";
+            txtIHRPrice.Size = new Size(160, 23);
+            txtIHRPrice.TabIndex = 4;
             // 
-            // label10
+            // lbIHRDescription
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(230, 114);
-            label10.Name = "label10";
-            label10.Size = new Size(83, 17);
-            label10.TabIndex = 3;
-            label10.Text = "Description: ";
+            lbIHRDescription.AutoSize = true;
+            lbIHRDescription.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIHRDescription.Location = new Point(230, 97);
+            lbIHRDescription.Name = "lbIHRDescription";
+            lbIHRDescription.Size = new Size(83, 17);
+            lbIHRDescription.TabIndex = 3;
+            lbIHRDescription.Text = "Description: ";
             // 
-            // label11
+            // lbIHRStatus
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(291, 69);
-            label11.Name = "label11";
-            label11.Size = new Size(49, 17);
-            label11.TabIndex = 1;
-            label11.Text = "Status:";
+            lbIHRStatus.AutoSize = true;
+            lbIHRStatus.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIHRStatus.Location = new Point(291, 64);
+            lbIHRStatus.Name = "lbIHRStatus";
+            lbIHRStatus.Size = new Size(49, 17);
+            lbIHRStatus.TabIndex = 1;
+            lbIHRStatus.Text = "Status:";
             // 
-            // label12
+            // lbIHRPrice
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(21, 69);
-            label12.Name = "label12";
-            label12.Size = new Size(40, 17);
-            label12.TabIndex = 0;
-            label12.Text = "Price:";
+            lbIHRPrice.AutoSize = true;
+            lbIHRPrice.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIHRPrice.Location = new Point(21, 64);
+            lbIHRPrice.Name = "lbIHRPrice";
+            lbIHRPrice.Size = new Size(40, 17);
+            lbIHRPrice.TabIndex = 0;
+            lbIHRPrice.Text = "Price:";
+            // 
+            // pnIHN
+            // 
+            pnIHN.BackColor = Color.WhiteSmoke;
+            pnIHN.BorderStyle = BorderStyle.FixedSingle;
+            pnIHN.Controls.Add(lbIHName);
+            pnIHN.Controls.Add(txtIHName);
+            pnIHN.Location = new Point(39, 51);
+            pnIHN.Name = "pnIHN";
+            pnIHN.Size = new Size(545, 68);
+            pnIHN.TabIndex = 5;
+            // 
+            // lbIHName
+            // 
+            lbIHName.AutoSize = true;
+            lbIHName.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIHName.Location = new Point(149, 23);
+            lbIHName.Name = "lbIHName";
+            lbIHName.Size = new Size(47, 17);
+            lbIHName.TabIndex = 10;
+            lbIHName.Text = "Name:";
+            // 
+            // txtIHName
+            // 
+            txtIHName.Location = new Point(234, 22);
+            txtIHName.Name = "txtIHName";
+            txtIHName.Size = new Size(160, 23);
+            txtIHName.TabIndex = 5;
             // 
             // tpAlterHotel
             // 
-            tpAlterHotel.Location = new Point(4, 44);
+            tpAlterHotel.Controls.Add(pnAHI);
+            tpAlterHotel.Location = new Point(4, 24);
             tpAlterHotel.Name = "tpAlterHotel";
-            tpAlterHotel.Size = new Size(622, 442);
+            tpAlterHotel.Size = new Size(622, 462);
             tpAlterHotel.TabIndex = 6;
             tpAlterHotel.Text = "Alter Hotel Information";
             tpAlterHotel.UseVisualStyleBackColor = true;
             // 
+            // pnAHI
+            // 
+            pnAHI.BackColor = Color.WhiteSmoke;
+            pnAHI.BorderStyle = BorderStyle.FixedSingle;
+            pnAHI.Controls.Add(btnAHIAlter);
+            pnAHI.Controls.Add(lbAHIName);
+            pnAHI.Controls.Add(txtAHIName);
+            pnAHI.Location = new Point(39, 176);
+            pnAHI.Name = "pnAHI";
+            pnAHI.Size = new Size(545, 110);
+            pnAHI.TabIndex = 16;
+            // 
+            // btnAHIAlter
+            // 
+            btnAHIAlter.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAHIAlter.Location = new Point(204, 62);
+            btnAHIAlter.Name = "btnAHIAlter";
+            btnAHIAlter.Size = new Size(125, 34);
+            btnAHIAlter.TabIndex = 17;
+            btnAHIAlter.Text = "Alter";
+            btnAHIAlter.UseVisualStyleBackColor = true;
+            // 
+            // lbAHIName
+            // 
+            lbAHIName.AutoSize = true;
+            lbAHIName.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbAHIName.Location = new Point(149, 23);
+            lbAHIName.Name = "lbAHIName";
+            lbAHIName.Size = new Size(47, 17);
+            lbAHIName.TabIndex = 10;
+            lbAHIName.Text = "Name:";
+            // 
+            // txtAHIName
+            // 
+            txtAHIName.Location = new Point(234, 22);
+            txtAHIName.Name = "txtAHIName";
+            txtAHIName.Size = new Size(160, 23);
+            txtAHIName.TabIndex = 5;
+            // 
             // tpDeleteHotel
             // 
-            tpDeleteHotel.Location = new Point(4, 44);
+            tpDeleteHotel.Controls.Add(pnDH);
+            tpDeleteHotel.Location = new Point(4, 24);
             tpDeleteHotel.Name = "tpDeleteHotel";
-            tpDeleteHotel.Size = new Size(622, 442);
+            tpDeleteHotel.Size = new Size(622, 462);
             tpDeleteHotel.TabIndex = 7;
             tpDeleteHotel.Text = "Delete Hotel";
             tpDeleteHotel.UseVisualStyleBackColor = true;
             // 
+            // pnDH
+            // 
+            pnDH.BackColor = Color.WhiteSmoke;
+            pnDH.BorderStyle = BorderStyle.FixedSingle;
+            pnDH.Controls.Add(btnDHDelete);
+            pnDH.Location = new Point(100, 183);
+            pnDH.Name = "pnDH";
+            pnDH.Size = new Size(423, 96);
+            pnDH.TabIndex = 17;
+            // 
+            // btnDHDelete
+            // 
+            btnDHDelete.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDHDelete.Location = new Point(146, 29);
+            btnDHDelete.Name = "btnDHDelete";
+            btnDHDelete.Size = new Size(129, 36);
+            btnDHDelete.TabIndex = 17;
+            btnDHDelete.Text = "Delete";
+            btnDHDelete.UseVisualStyleBackColor = true;
+            // 
             // tpAlterGuest
             // 
-            tpAlterGuest.Location = new Point(4, 44);
+            tpAlterGuest.Controls.Add(panel1);
+            tpAlterGuest.Location = new Point(4, 24);
             tpAlterGuest.Name = "tpAlterGuest";
-            tpAlterGuest.Size = new Size(622, 442);
+            tpAlterGuest.Size = new Size(622, 462);
             tpAlterGuest.TabIndex = 8;
             tpAlterGuest.Text = "Alter Guest Information";
             tpAlterGuest.UseVisualStyleBackColor = true;
-            // 
-            // tpDeleteGuest
-            // 
-            tpDeleteGuest.Location = new Point(4, 44);
-            tpDeleteGuest.Name = "tpDeleteGuest";
-            tpDeleteGuest.Size = new Size(622, 442);
-            tpDeleteGuest.TabIndex = 9;
-            tpDeleteGuest.Text = "Delete Guest";
-            tpDeleteGuest.UseVisualStyleBackColor = true;
-            // 
-            // tpInsertGuest
-            // 
-            tpInsertGuest.Controls.Add(panel1);
-            tpInsertGuest.Location = new Point(4, 44);
-            tpInsertGuest.Name = "tpInsertGuest";
-            tpInsertGuest.Size = new Size(622, 442);
-            tpInsertGuest.TabIndex = 10;
-            tpInsertGuest.Text = "Insert Guest";
-            tpInsertGuest.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             panel1.BackColor = Color.WhiteSmoke;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label6);
-            panel1.Location = new Point(39, 79);
+            panel1.Controls.Add(btnAGISearch);
+            panel1.Controls.Add(pnCInfoAGI);
+            panel1.Controls.Add(txtAGISearchCode);
+            panel1.Controls.Add(lbAGISearchCode);
+            panel1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            panel1.Location = new Point(35, 49);
             panel1.Name = "panel1";
-            panel1.Size = new Size(545, 264);
-            panel1.TabIndex = 5;
+            panel1.Size = new Size(553, 364);
+            panel1.TabIndex = 7;
             // 
-            // comboBox1
+            // btnAGISearch
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Available" });
-            comboBox1.Location = new Point(359, 67);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(160, 23);
-            comboBox1.TabIndex = 14;
+            btnAGISearch.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAGISearch.Location = new Point(213, 86);
+            btnAGISearch.Name = "btnAGISearch";
+            btnAGISearch.Size = new Size(125, 34);
+            btnAGISearch.TabIndex = 2;
+            btnAGISearch.Text = "Search";
+            btnAGISearch.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // pnCInfoAGI
             // 
-            textBox1.Location = new Point(359, 21);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(160, 23);
-            textBox1.TabIndex = 13;
+            pnCInfoAGI.BackColor = Color.WhiteSmoke;
+            pnCInfoAGI.Controls.Add(txtAGIEmail);
+            pnCInfoAGI.Controls.Add(txtAGIName);
+            pnCInfoAGI.Controls.Add(lbAGIName);
+            pnCInfoAGI.Controls.Add(lbAGIId);
+            pnCInfoAGI.Controls.Add(btnAGIAlter);
+            pnCInfoAGI.Controls.Add(txtAGIId);
+            pnCInfoAGI.Controls.Add(txtAGIPhone);
+            pnCInfoAGI.Controls.Add(lbAGIEmail);
+            pnCInfoAGI.Controls.Add(lbAGIPhone);
+            pnCInfoAGI.Location = new Point(3, 147);
+            pnCInfoAGI.Name = "pnCInfoAGI";
+            pnCInfoAGI.Size = new Size(545, 197);
+            pnCInfoAGI.TabIndex = 6;
             // 
-            // label1
+            // txtAGIEmail
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(291, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(62, 17);
-            label1.TabIndex = 12;
-            label1.Text = "Capacity:";
+            txtAGIEmail.Location = new Point(359, 67);
+            txtAGIEmail.Name = "txtAGIEmail";
+            txtAGIEmail.Size = new Size(160, 25);
+            txtAGIEmail.TabIndex = 14;
             // 
-            // label2
+            // txtAGIName
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(21, 22);
-            label2.Name = "label2";
-            label2.Size = new Size(42, 17);
-            label2.TabIndex = 10;
-            label2.Text = "Code:";
+            txtAGIName.Location = new Point(359, 21);
+            txtAGIName.Name = "txtAGIName";
+            txtAGIName.Size = new Size(160, 25);
+            txtAGIName.TabIndex = 13;
             // 
-            // label3
+            // lbAGIName
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(20, 176);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 15);
-            label3.TabIndex = 9;
+            lbAGIName.AutoSize = true;
+            lbAGIName.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbAGIName.Location = new Point(291, 22);
+            lbAGIName.Name = "lbAGIName";
+            lbAGIName.Size = new Size(47, 17);
+            lbAGIName.TabIndex = 12;
+            lbAGIName.Text = "Name:";
             // 
-            // button1
+            // lbAGIId
             // 
-            button1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(209, 209);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 34);
-            button1.TabIndex = 8;
-            button1.Text = "Enter";
-            button1.UseVisualStyleBackColor = true;
+            lbAGIId.AutoSize = true;
+            lbAGIId.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbAGIId.Location = new Point(21, 22);
+            lbAGIId.Name = "lbAGIId";
+            lbAGIId.Size = new Size(23, 17);
+            lbAGIId.TabIndex = 10;
+            lbAGIId.Text = "Id:";
             // 
-            // textBox2
+            // btnAGIAlter
             // 
-            textBox2.Location = new Point(164, 137);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(214, 56);
-            textBox2.TabIndex = 7;
+            btnAGIAlter.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAGIAlter.Location = new Point(209, 130);
+            btnAGIAlter.Name = "btnAGIAlter";
+            btnAGIAlter.Size = new Size(125, 34);
+            btnAGIAlter.TabIndex = 8;
+            btnAGIAlter.Text = "Alter";
+            btnAGIAlter.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtAGIId
             // 
-            textBox3.Location = new Point(106, 21);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(160, 23);
-            textBox3.TabIndex = 5;
+            txtAGIId.Location = new Point(106, 21);
+            txtAGIId.Name = "txtAGIId";
+            txtAGIId.Size = new Size(160, 25);
+            txtAGIId.TabIndex = 5;
             // 
-            // textBox4
+            // txtAGIPhone
             // 
-            textBox4.Location = new Point(106, 68);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(160, 23);
-            textBox4.TabIndex = 4;
+            txtAGIPhone.Location = new Point(106, 68);
+            txtAGIPhone.Name = "txtAGIPhone";
+            txtAGIPhone.Size = new Size(160, 25);
+            txtAGIPhone.TabIndex = 4;
             // 
-            // label4
+            // lbAGIEmail
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(230, 114);
-            label4.Name = "label4";
-            label4.Size = new Size(83, 17);
-            label4.TabIndex = 3;
-            label4.Text = "Description: ";
+            lbAGIEmail.AutoSize = true;
+            lbAGIEmail.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbAGIEmail.Location = new Point(291, 69);
+            lbAGIEmail.Name = "lbAGIEmail";
+            lbAGIEmail.Size = new Size(43, 17);
+            lbAGIEmail.TabIndex = 1;
+            lbAGIEmail.Text = "Email:";
             // 
-            // label5
+            // lbAGIPhone
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(291, 69);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 17);
-            label5.TabIndex = 1;
-            label5.Text = "Status:";
+            lbAGIPhone.AutoSize = true;
+            lbAGIPhone.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbAGIPhone.Location = new Point(21, 69);
+            lbAGIPhone.Name = "lbAGIPhone";
+            lbAGIPhone.Size = new Size(50, 17);
+            lbAGIPhone.TabIndex = 0;
+            lbAGIPhone.Text = "Phone:";
             // 
-            // label6
+            // txtAGISearchCode
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(21, 69);
-            label6.Name = "label6";
-            label6.Size = new Size(40, 17);
-            label6.TabIndex = 0;
-            label6.Text = "Price:";
+            txtAGISearchCode.BorderStyle = BorderStyle.FixedSingle;
+            txtAGISearchCode.Location = new Point(278, 41);
+            txtAGISearchCode.Name = "txtAGISearchCode";
+            txtAGISearchCode.Size = new Size(112, 25);
+            txtAGISearchCode.TabIndex = 1;
+            // 
+            // lbAGISearchCode
+            // 
+            lbAGISearchCode.AutoSize = true;
+            lbAGISearchCode.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbAGISearchCode.Location = new Point(161, 43);
+            lbAGISearchCode.Name = "lbAGISearchCode";
+            lbAGISearchCode.Size = new Size(62, 17);
+            lbAGISearchCode.TabIndex = 0;
+            lbAGISearchCode.Text = "Guest Id:";
+            // 
+            // tpDeleteGuest
+            // 
+            tpDeleteGuest.Controls.Add(pnDG);
+            tpDeleteGuest.Location = new Point(4, 24);
+            tpDeleteGuest.Name = "tpDeleteGuest";
+            tpDeleteGuest.Size = new Size(622, 462);
+            tpDeleteGuest.TabIndex = 9;
+            tpDeleteGuest.Text = "Delete Guest";
+            tpDeleteGuest.UseVisualStyleBackColor = true;
+            // 
+            // pnDG
+            // 
+            pnDG.BackColor = Color.WhiteSmoke;
+            pnDG.BorderStyle = BorderStyle.FixedSingle;
+            pnDG.Controls.Add(btnDGDelete);
+            pnDG.Controls.Add(cbDGGuest);
+            pnDG.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            pnDG.Location = new Point(39, 156);
+            pnDG.Name = "pnDG";
+            pnDG.Size = new Size(545, 151);
+            pnDG.TabIndex = 6;
+            // 
+            // btnDGDelete
+            // 
+            btnDGDelete.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDGDelete.Location = new Point(222, 90);
+            btnDGDelete.Name = "btnDGDelete";
+            btnDGDelete.Size = new Size(98, 34);
+            btnDGDelete.TabIndex = 9;
+            btnDGDelete.Text = "Delete";
+            btnDGDelete.UseVisualStyleBackColor = true;
+            // 
+            // cbDGGuest
+            // 
+            cbDGGuest.FormattingEnabled = true;
+            cbDGGuest.Location = new Point(207, 44);
+            cbDGGuest.Name = "cbDGGuest";
+            cbDGGuest.Size = new Size(129, 25);
+            cbDGGuest.TabIndex = 0;
+            // 
+            // tpInsertGuest
+            // 
+            tpInsertGuest.Controls.Add(pnIG);
+            tpInsertGuest.Location = new Point(4, 24);
+            tpInsertGuest.Name = "tpInsertGuest";
+            tpInsertGuest.Size = new Size(622, 462);
+            tpInsertGuest.TabIndex = 10;
+            tpInsertGuest.Text = "Insert Guest";
+            tpInsertGuest.UseVisualStyleBackColor = true;
+            // 
+            // pnIG
+            // 
+            pnIG.BackColor = Color.WhiteSmoke;
+            pnIG.BorderStyle = BorderStyle.FixedSingle;
+            pnIG.Controls.Add(txtIGEmail);
+            pnIG.Controls.Add(txtIGName);
+            pnIG.Controls.Add(lbIGName);
+            pnIG.Controls.Add(lbIGId);
+            pnIG.Controls.Add(btnIGEnter);
+            pnIG.Controls.Add(txtIGId);
+            pnIG.Controls.Add(txtIGPhone);
+            pnIG.Controls.Add(lbIGEmail);
+            pnIG.Controls.Add(lbIGPhone);
+            pnIG.Location = new Point(39, 113);
+            pnIG.Name = "pnIG";
+            pnIG.Size = new Size(545, 197);
+            pnIG.TabIndex = 5;
+            // 
+            // txtIGEmail
+            // 
+            txtIGEmail.Location = new Point(359, 67);
+            txtIGEmail.Name = "txtIGEmail";
+            txtIGEmail.Size = new Size(160, 23);
+            txtIGEmail.TabIndex = 14;
+            // 
+            // txtIGName
+            // 
+            txtIGName.Location = new Point(359, 21);
+            txtIGName.Name = "txtIGName";
+            txtIGName.Size = new Size(160, 23);
+            txtIGName.TabIndex = 13;
+            // 
+            // lbIGName
+            // 
+            lbIGName.AutoSize = true;
+            lbIGName.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIGName.Location = new Point(291, 22);
+            lbIGName.Name = "lbIGName";
+            lbIGName.Size = new Size(47, 17);
+            lbIGName.TabIndex = 12;
+            lbIGName.Text = "Name:";
+            // 
+            // lbIGId
+            // 
+            lbIGId.AutoSize = true;
+            lbIGId.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIGId.Location = new Point(21, 22);
+            lbIGId.Name = "lbIGId";
+            lbIGId.Size = new Size(23, 17);
+            lbIGId.TabIndex = 10;
+            lbIGId.Text = "Id:";
+            // 
+            // btnIGEnter
+            // 
+            btnIGEnter.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIGEnter.Location = new Point(209, 130);
+            btnIGEnter.Name = "btnIGEnter";
+            btnIGEnter.Size = new Size(125, 34);
+            btnIGEnter.TabIndex = 8;
+            btnIGEnter.Text = "Enter";
+            btnIGEnter.UseVisualStyleBackColor = true;
+            btnIGEnter.Click += btnIGEnter_Click;
+            // 
+            // txtIGId
+            // 
+            txtIGId.Location = new Point(106, 21);
+            txtIGId.Name = "txtIGId";
+            txtIGId.Size = new Size(160, 23);
+            txtIGId.TabIndex = 5;
+            // 
+            // txtIGPhone
+            // 
+            txtIGPhone.Location = new Point(106, 68);
+            txtIGPhone.Name = "txtIGPhone";
+            txtIGPhone.Size = new Size(160, 23);
+            txtIGPhone.TabIndex = 4;
+            // 
+            // lbIGEmail
+            // 
+            lbIGEmail.AutoSize = true;
+            lbIGEmail.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIGEmail.Location = new Point(291, 69);
+            lbIGEmail.Name = "lbIGEmail";
+            lbIGEmail.Size = new Size(43, 17);
+            lbIGEmail.TabIndex = 1;
+            lbIGEmail.Text = "Email:";
+            // 
+            // lbIGPhone
+            // 
+            lbIGPhone.AutoSize = true;
+            lbIGPhone.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbIGPhone.Location = new Point(21, 69);
+            lbIGPhone.Name = "lbIGPhone";
+            lbIGPhone.Size = new Size(50, 17);
+            lbIGPhone.TabIndex = 0;
+            lbIGPhone.Text = "Phone:";
             // 
             // tpSeeGuest
             // 
-            tpSeeGuest.Location = new Point(4, 44);
+            tpSeeGuest.Controls.Add(btnSGShowGuest);
+            tpSeeGuest.Controls.Add(dtgSGGuests);
+            tpSeeGuest.Location = new Point(4, 24);
             tpSeeGuest.Name = "tpSeeGuest";
-            tpSeeGuest.Size = new Size(622, 442);
+            tpSeeGuest.Size = new Size(622, 462);
             tpSeeGuest.TabIndex = 11;
             tpSeeGuest.Text = "See Guest";
             tpSeeGuest.UseVisualStyleBackColor = true;
             // 
+            // btnSGShowGuest
+            // 
+            btnSGShowGuest.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSGShowGuest.Location = new Point(249, 26);
+            btnSGShowGuest.Name = "btnSGShowGuest";
+            btnSGShowGuest.Size = new Size(125, 39);
+            btnSGShowGuest.TabIndex = 3;
+            btnSGShowGuest.Text = "Show Guests";
+            btnSGShowGuest.UseVisualStyleBackColor = true;
+            // 
+            // dtgSGGuests
+            // 
+            dtgSGGuests.AllowUserToAddRows = false;
+            dtgSGGuests.AllowUserToDeleteRows = false;
+            dtgSGGuests.AllowUserToResizeColumns = false;
+            dtgSGGuests.AllowUserToResizeRows = false;
+            dtgSGGuests.BackgroundColor = Color.Gainsboro;
+            dtgSGGuests.BorderStyle = BorderStyle.None;
+            dtgSGGuests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgSGGuests.GridColor = Color.Silver;
+            dtgSGGuests.Location = new Point(31, 97);
+            dtgSGGuests.Name = "dtgSGGuests";
+            dtgSGGuests.ReadOnly = true;
+            dtgSGGuests.RowHeadersVisible = false;
+            dtgSGGuests.RowTemplate.Height = 25;
+            dtgSGGuests.ShowCellToolTips = false;
+            dtgSGGuests.Size = new Size(561, 300);
+            dtgSGGuests.TabIndex = 2;
+            // 
             // tpCheckIn
             // 
-            tpCheckIn.Location = new Point(4, 44);
+            tpCheckIn.Location = new Point(4, 24);
             tpCheckIn.Name = "tpCheckIn";
-            tpCheckIn.Size = new Size(622, 442);
+            tpCheckIn.Size = new Size(622, 462);
             tpCheckIn.TabIndex = 12;
             tpCheckIn.Text = "Check In";
             tpCheckIn.UseVisualStyleBackColor = true;
             // 
             // tpCheckOut
             // 
-            tpCheckOut.Location = new Point(4, 64);
+            tpCheckOut.Location = new Point(4, 24);
             tpCheckOut.Name = "tpCheckOut";
-            tpCheckOut.Size = new Size(622, 422);
+            tpCheckOut.Size = new Size(622, 462);
             tpCheckOut.TabIndex = 13;
             tpCheckOut.Text = "Check Out";
             tpCheckOut.UseVisualStyleBackColor = true;
             // 
             // tpAlterHosting
             // 
-            tpAlterHosting.Location = new Point(4, 64);
+            tpAlterHosting.Location = new Point(4, 24);
             tpAlterHosting.Name = "tpAlterHosting";
-            tpAlterHosting.Size = new Size(622, 422);
+            tpAlterHosting.Size = new Size(622, 462);
             tpAlterHosting.TabIndex = 14;
             tpAlterHosting.Text = "Alter Hosting Information";
             tpAlterHosting.UseVisualStyleBackColor = true;
             // 
             // tpSeeHosting
             // 
-            tpSeeHosting.Location = new Point(4, 64);
+            tpSeeHosting.Controls.Add(btnSHShowHosting);
+            tpSeeHosting.Controls.Add(dtgSHHostings);
+            tpSeeHosting.Location = new Point(4, 24);
             tpSeeHosting.Name = "tpSeeHosting";
-            tpSeeHosting.Size = new Size(622, 422);
+            tpSeeHosting.Size = new Size(622, 462);
             tpSeeHosting.TabIndex = 15;
             tpSeeHosting.Text = "See Hosting";
             tpSeeHosting.UseVisualStyleBackColor = true;
+            // 
+            // btnSHShowHosting
+            // 
+            btnSHShowHosting.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSHShowHosting.Location = new Point(249, 26);
+            btnSHShowHosting.Name = "btnSHShowHosting";
+            btnSHShowHosting.Size = new Size(125, 39);
+            btnSHShowHosting.TabIndex = 5;
+            btnSHShowHosting.Text = "Show Hostings";
+            btnSHShowHosting.UseVisualStyleBackColor = true;
+            // 
+            // dtgSHHostings
+            // 
+            dtgSHHostings.AllowUserToAddRows = false;
+            dtgSHHostings.AllowUserToDeleteRows = false;
+            dtgSHHostings.AllowUserToResizeColumns = false;
+            dtgSHHostings.AllowUserToResizeRows = false;
+            dtgSHHostings.BackgroundColor = Color.Gainsboro;
+            dtgSHHostings.BorderStyle = BorderStyle.None;
+            dtgSHHostings.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgSHHostings.GridColor = Color.Silver;
+            dtgSHHostings.Location = new Point(31, 97);
+            dtgSHHostings.Name = "dtgSHHostings";
+            dtgSHHostings.ReadOnly = true;
+            dtgSHHostings.RowHeadersVisible = false;
+            dtgSHHostings.RowTemplate.Height = 25;
+            dtgSHHostings.ShowCellToolTips = false;
+            dtgSHHostings.Size = new Size(561, 300);
+            dtgSHHostings.TabIndex = 4;
             // 
             // frmIndex
             // 
@@ -1077,7 +1458,7 @@
             ((System.ComponentModel.ISupportInitialize)pbIcon).EndInit();
             tcManage.ResumeLayout(false);
             tpSeeRooms.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dtvSRooms).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgSRRooms).EndInit();
             tpInsertRoom.ResumeLayout(false);
             pnIR.ResumeLayout(false);
             pnIR.PerformLayout();
@@ -1088,12 +1469,32 @@
             pnCInfoARI.PerformLayout();
             tpDeleteRoom.ResumeLayout(false);
             pnDR.ResumeLayout(false);
+            tpSeeHotel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dtgSHRooms).EndInit();
             tpInsertHotel.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            tpInsertGuest.ResumeLayout(false);
+            pnINR.ResumeLayout(false);
+            pnINR.PerformLayout();
+            pnIHN.ResumeLayout(false);
+            pnIHN.PerformLayout();
+            tpAlterHotel.ResumeLayout(false);
+            pnAHI.ResumeLayout(false);
+            pnAHI.PerformLayout();
+            tpDeleteHotel.ResumeLayout(false);
+            pnDH.ResumeLayout(false);
+            tpAlterGuest.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            pnCInfoAGI.ResumeLayout(false);
+            pnCInfoAGI.PerformLayout();
+            tpDeleteGuest.ResumeLayout(false);
+            pnDG.ResumeLayout(false);
+            tpInsertGuest.ResumeLayout(false);
+            pnIG.ResumeLayout(false);
+            pnIG.PerformLayout();
+            tpSeeGuest.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dtgSGGuests).EndInit();
+            tpSeeHosting.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dtgSHHostings).EndInit();
             ResumeLayout(false);
         }
 
@@ -1102,8 +1503,8 @@
         private Panel pnMMenu;
         private Panel pnDivisorMHotel;
         private Button btnManageHotel;
-        private Panel pnDivisorTOHosting;
-        private Panel pnDivisorEHosting;
+        private Panel pnDivisorCheckOut;
+        private Panel pnDivisorCheckIn;
         private Panel pnDivisorMRoom;
         private Panel pnDivisorMGuest;
         private PictureBox pbIcon;
@@ -1113,8 +1514,8 @@
         private Button btnManageGuest;
         private TabControl tcManage;
         private TabPage tpSeeRooms;
-        private Button btnSRShow;
-        private DataGridView dtvSRooms;
+        private Button btnSRShowRoom;
+        private DataGridView dtgSRRooms;
         private TabPage tpInsertRoom;
         private Panel pnIR;
         private Label lbEPInformation;
@@ -1155,7 +1556,7 @@
         private ComboBox cbIRStatus;
         private ComboBox cbARIStatus;
         private Button btnDRDelete;
-        private ComboBox cbCRCode;
+        private ComboBox cbDRRoom;
         private TabPage tpSeeHotel;
         private TabPage tpInsertHotel;
         private TabPage tpAlterHotel;
@@ -1171,28 +1572,73 @@
         private Panel panel2;
         private ComboBox comboBox2;
         private TextBox textBox5;
-        private Label label7;
         private Label label8;
         private Label label9;
-        private Button button2;
         private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox txtIHName;
         private TextBox textBox8;
         private Label label10;
         private Label label11;
         private Label label12;
-        private Panel panel1;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
-        private Label label1;
-        private Label label2;
+        private Panel pnIG;
+        private TextBox txtIGName;
+        private Label lbIGName;
+        private ComboBox cbIHRStatus;
+        private TextBox txtIGRCapacity;
+        private Label lbIHRCapacity;
+        private Label lbIHRCode;
         private Label label3;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtIHRDescription;
+        private TextBox txtIHRCode;
+        private TextBox txtIHRPrice;
         private Label label4;
+        private Label lbIHRDescription;
+        private Label lbIGPhone;
+        private TextBox txtIGEmail;
+        private Button btnIGEnter;
+        private Label lbIGId;
+        private TextBox txtIGPhone;
+        private TextBox txtIGId;
+        private Label lbIGEmail;
+        private Button btnSGShowGuest;
+        private DataGridView dtgSGGuests;
+        private Button btnSHShowHosting;
+        private DataGridView dtgSHHostings;
+        private Panel pnINR;
+        private Button btnIHRAdd;
+        private Label lbIHRStatus;
+        private Label lbIHRPrice;
+        private Button btnIHEnter;
+        private Panel pnIHN;
+        private Label lbIHName;
+        private Panel pnAHI;
+        private Button btnAHIAlter;
+        private Label lbAHIName;
+        private Label label2;
+        private TextBox txtAHIName;
+        private Panel pnDH;
+        private Button btnDHDelete;
         private Label label5;
-        private Label label6;
+        private Panel pnCInfoAGI;
+        private TextBox txtAGIEmail;
+        private TextBox txtAGIName;
+        private Label lbAGIName;
+        private Label lbAGIId;
+        private Label label7;
+        private Button btnAGIAlter;
+        private TextBox txtAGIId;
+        private TextBox txtAGIPhone;
+        private Label lbAGIEmail;
+        private Label lbAGIPhone;
+        private Panel pnDG;
+        private Button btnDGDelete;
+        private ComboBox cbDGGuest;
+        private Panel panel1;
+        private Button btnAGISearch;
+        private TextBox txtAGISearchCode;
+        private Label lbAGISearchCode;
+        private Label lbSHName;
+        private Button btnSHSRooms;
+        private DataGridView dtgSHRooms;
     }
 }
