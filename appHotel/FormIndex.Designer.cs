@@ -83,29 +83,6 @@
             cbCRCode = new ComboBox();
             tpSeeHotel = new TabPage();
             tpInsertHotel = new TabPage();
-            tpAlterHotel = new TabPage();
-            tpDeleteHotel = new TabPage();
-            tpAlterGuest = new TabPage();
-            tpDeleteGuest = new TabPage();
-            tpInsertGuest = new TabPage();
-            tpSeeGuest = new TabPage();
-            tpCheckIn = new TabPage();
-            tpCheckOut = new TabPage();
-            tpAlterHosting = new TabPage();
-            tpSeeHosting = new TabPage();
-            panel1 = new Panel();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            button1 = new Button();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
             panel2 = new Panel();
             comboBox2 = new ComboBox();
             textBox5 = new TextBox();
@@ -119,6 +96,29 @@
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
+            tpAlterHotel = new TabPage();
+            tpDeleteHotel = new TabPage();
+            tpAlterGuest = new TabPage();
+            tpDeleteGuest = new TabPage();
+            tpInsertGuest = new TabPage();
+            panel1 = new Panel();
+            comboBox1 = new ComboBox();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            button1 = new Button();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            tpSeeGuest = new TabPage();
+            tpCheckIn = new TabPage();
+            tpCheckOut = new TabPage();
+            tpAlterHosting = new TabPage();
+            tpSeeHosting = new TabPage();
             pnMMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIcon).BeginInit();
             tcManage.SuspendLayout();
@@ -132,9 +132,9 @@
             tpDeleteRoom.SuspendLayout();
             pnDR.SuspendLayout();
             tpInsertHotel.SuspendLayout();
+            panel2.SuspendLayout();
             tpInsertGuest.SuspendLayout();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // pnMMenu
@@ -363,9 +363,9 @@
             // tpInsertRoom
             // 
             tpInsertRoom.Controls.Add(pnIR);
-            tpInsertRoom.Location = new Point(4, 64);
+            tpInsertRoom.Location = new Point(4, 24);
             tpInsertRoom.Name = "tpInsertRoom";
-            tpInsertRoom.Size = new Size(622, 422);
+            tpInsertRoom.Size = new Size(622, 462);
             tpInsertRoom.TabIndex = 2;
             tpInsertRoom.Text = "Insert Room";
             tpInsertRoom.UseVisualStyleBackColor = true;
@@ -502,10 +502,10 @@
             // 
             tpAlterRoom.BackColor = Color.White;
             tpAlterRoom.Controls.Add(pnARI);
-            tpAlterRoom.Location = new Point(4, 64);
+            tpAlterRoom.Location = new Point(4, 24);
             tpAlterRoom.Name = "tpAlterRoom";
             tpAlterRoom.Padding = new Padding(3);
-            tpAlterRoom.Size = new Size(622, 422);
+            tpAlterRoom.Size = new Size(622, 462);
             tpAlterRoom.TabIndex = 0;
             tpAlterRoom.Text = "Alter Room Information";
             // 
@@ -660,9 +660,9 @@
             // tpDeleteRoom
             // 
             tpDeleteRoom.Controls.Add(pnDR);
-            tpDeleteRoom.Location = new Point(4, 64);
+            tpDeleteRoom.Location = new Point(4, 24);
             tpDeleteRoom.Name = "tpDeleteRoom";
-            tpDeleteRoom.Size = new Size(622, 422);
+            tpDeleteRoom.Size = new Size(622, 462);
             tpDeleteRoom.TabIndex = 3;
             tpDeleteRoom.Text = "Delete Room";
             tpDeleteRoom.UseVisualStyleBackColor = true;
@@ -699,9 +699,9 @@
             // 
             // tpSeeHotel
             // 
-            tpSeeHotel.Location = new Point(4, 64);
+            tpSeeHotel.Location = new Point(4, 24);
             tpSeeHotel.Name = "tpSeeHotel";
-            tpSeeHotel.Size = new Size(622, 422);
+            tpSeeHotel.Size = new Size(622, 462);
             tpSeeHotel.TabIndex = 4;
             tpSeeHotel.Text = "See Hotel";
             tpSeeHotel.UseVisualStyleBackColor = true;
@@ -709,231 +709,12 @@
             // tpInsertHotel
             // 
             tpInsertHotel.Controls.Add(panel2);
-            tpInsertHotel.Location = new Point(4, 64);
+            tpInsertHotel.Location = new Point(4, 24);
             tpInsertHotel.Name = "tpInsertHotel";
-            tpInsertHotel.Size = new Size(622, 422);
+            tpInsertHotel.Size = new Size(622, 462);
             tpInsertHotel.TabIndex = 5;
             tpInsertHotel.Text = "Insert Hotel";
             tpInsertHotel.UseVisualStyleBackColor = true;
-            // 
-            // tpAlterHotel
-            // 
-            tpAlterHotel.Location = new Point(4, 64);
-            tpAlterHotel.Name = "tpAlterHotel";
-            tpAlterHotel.Size = new Size(622, 422);
-            tpAlterHotel.TabIndex = 6;
-            tpAlterHotel.Text = "AlterHotel";
-            tpAlterHotel.UseVisualStyleBackColor = true;
-            // 
-            // tpDeleteHotel
-            // 
-            tpDeleteHotel.Location = new Point(4, 64);
-            tpDeleteHotel.Name = "tpDeleteHotel";
-            tpDeleteHotel.Size = new Size(622, 422);
-            tpDeleteHotel.TabIndex = 7;
-            tpDeleteHotel.Text = "Delete Hotel";
-            tpDeleteHotel.UseVisualStyleBackColor = true;
-            // 
-            // tpAlterGuest
-            // 
-            tpAlterGuest.Location = new Point(4, 64);
-            tpAlterGuest.Name = "tpAlterGuest";
-            tpAlterGuest.Size = new Size(622, 422);
-            tpAlterGuest.TabIndex = 8;
-            tpAlterGuest.Text = "Alter Guest";
-            tpAlterGuest.UseVisualStyleBackColor = true;
-            // 
-            // tpDeleteGuest
-            // 
-            tpDeleteGuest.Location = new Point(4, 64);
-            tpDeleteGuest.Name = "tpDeleteGuest";
-            tpDeleteGuest.Size = new Size(622, 422);
-            tpDeleteGuest.TabIndex = 9;
-            tpDeleteGuest.Text = "Delete Guest";
-            tpDeleteGuest.UseVisualStyleBackColor = true;
-            // 
-            // tpInsertGuest
-            // 
-            tpInsertGuest.Controls.Add(panel1);
-            tpInsertGuest.Location = new Point(4, 64);
-            tpInsertGuest.Name = "tpInsertGuest";
-            tpInsertGuest.Size = new Size(622, 422);
-            tpInsertGuest.TabIndex = 10;
-            tpInsertGuest.Text = "Insert Guest";
-            tpInsertGuest.UseVisualStyleBackColor = true;
-            // 
-            // tpSeeGuest
-            // 
-            tpSeeGuest.Location = new Point(4, 64);
-            tpSeeGuest.Name = "tpSeeGuest";
-            tpSeeGuest.Size = new Size(622, 422);
-            tpSeeGuest.TabIndex = 11;
-            tpSeeGuest.Text = "See Guest";
-            tpSeeGuest.UseVisualStyleBackColor = true;
-            // 
-            // tpCheckIn
-            // 
-            tpCheckIn.Location = new Point(4, 64);
-            tpCheckIn.Name = "tpCheckIn";
-            tpCheckIn.Size = new Size(622, 422);
-            tpCheckIn.TabIndex = 12;
-            tpCheckIn.Text = "Check In";
-            tpCheckIn.UseVisualStyleBackColor = true;
-            // 
-            // tpCheckOut
-            // 
-            tpCheckOut.Location = new Point(4, 64);
-            tpCheckOut.Name = "tpCheckOut";
-            tpCheckOut.Size = new Size(622, 422);
-            tpCheckOut.TabIndex = 13;
-            tpCheckOut.Text = "Check Out";
-            tpCheckOut.UseVisualStyleBackColor = true;
-            // 
-            // tpAlterHosting
-            // 
-            tpAlterHosting.Location = new Point(4, 64);
-            tpAlterHosting.Name = "tpAlterHosting";
-            tpAlterHosting.Size = new Size(622, 422);
-            tpAlterHosting.TabIndex = 14;
-            tpAlterHosting.Text = "Alter Hosting ";
-            tpAlterHosting.UseVisualStyleBackColor = true;
-            // 
-            // tpSeeHosting
-            // 
-            tpSeeHosting.Location = new Point(4, 64);
-            tpSeeHosting.Name = "tpSeeHosting";
-            tpSeeHosting.Size = new Size(622, 422);
-            tpSeeHosting.TabIndex = 15;
-            tpSeeHosting.Text = "See Hosting";
-            tpSeeHosting.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.WhiteSmoke;
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label6);
-            panel1.Location = new Point(39, 79);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(545, 264);
-            panel1.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Available" });
-            comboBox1.Location = new Point(359, 67);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(160, 23);
-            comboBox1.TabIndex = 14;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(359, 21);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(160, 23);
-            textBox1.TabIndex = 13;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(291, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(62, 17);
-            label1.TabIndex = 12;
-            label1.Text = "Capacity:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(21, 22);
-            label2.Name = "label2";
-            label2.Size = new Size(42, 17);
-            label2.TabIndex = 10;
-            label2.Text = "Code:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(20, 176);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 15);
-            label3.TabIndex = 9;
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(209, 209);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 34);
-            button1.TabIndex = 8;
-            button1.Text = "Enter";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(164, 137);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(214, 56);
-            textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(106, 21);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(160, 23);
-            textBox3.TabIndex = 5;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(106, 68);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(160, 23);
-            textBox4.TabIndex = 4;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(230, 114);
-            label4.Name = "label4";
-            label4.Size = new Size(83, 17);
-            label4.TabIndex = 3;
-            label4.Text = "Description: ";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(291, 69);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 17);
-            label5.TabIndex = 1;
-            label5.Text = "Status:";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(21, 69);
-            label6.Name = "label6";
-            label6.Size = new Size(40, 17);
-            label6.TabIndex = 0;
-            label6.Text = "Price:";
             // 
             // panel2
             // 
@@ -1063,6 +844,225 @@
             label12.TabIndex = 0;
             label12.Text = "Price:";
             // 
+            // tpAlterHotel
+            // 
+            tpAlterHotel.Location = new Point(4, 44);
+            tpAlterHotel.Name = "tpAlterHotel";
+            tpAlterHotel.Size = new Size(622, 442);
+            tpAlterHotel.TabIndex = 6;
+            tpAlterHotel.Text = "Alter Hotel Information";
+            tpAlterHotel.UseVisualStyleBackColor = true;
+            // 
+            // tpDeleteHotel
+            // 
+            tpDeleteHotel.Location = new Point(4, 44);
+            tpDeleteHotel.Name = "tpDeleteHotel";
+            tpDeleteHotel.Size = new Size(622, 442);
+            tpDeleteHotel.TabIndex = 7;
+            tpDeleteHotel.Text = "Delete Hotel";
+            tpDeleteHotel.UseVisualStyleBackColor = true;
+            // 
+            // tpAlterGuest
+            // 
+            tpAlterGuest.Location = new Point(4, 44);
+            tpAlterGuest.Name = "tpAlterGuest";
+            tpAlterGuest.Size = new Size(622, 442);
+            tpAlterGuest.TabIndex = 8;
+            tpAlterGuest.Text = "Alter Guest Information";
+            tpAlterGuest.UseVisualStyleBackColor = true;
+            // 
+            // tpDeleteGuest
+            // 
+            tpDeleteGuest.Location = new Point(4, 44);
+            tpDeleteGuest.Name = "tpDeleteGuest";
+            tpDeleteGuest.Size = new Size(622, 442);
+            tpDeleteGuest.TabIndex = 9;
+            tpDeleteGuest.Text = "Delete Guest";
+            tpDeleteGuest.UseVisualStyleBackColor = true;
+            // 
+            // tpInsertGuest
+            // 
+            tpInsertGuest.Controls.Add(panel1);
+            tpInsertGuest.Location = new Point(4, 44);
+            tpInsertGuest.Name = "tpInsertGuest";
+            tpInsertGuest.Size = new Size(622, 442);
+            tpInsertGuest.TabIndex = 10;
+            tpInsertGuest.Text = "Insert Guest";
+            tpInsertGuest.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.WhiteSmoke;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label6);
+            panel1.Location = new Point(39, 79);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(545, 264);
+            panel1.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Available" });
+            comboBox1.Location = new Point(359, 67);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(160, 23);
+            comboBox1.TabIndex = 14;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(359, 21);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(160, 23);
+            textBox1.TabIndex = 13;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(291, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 17);
+            label1.TabIndex = 12;
+            label1.Text = "Capacity:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(21, 22);
+            label2.Name = "label2";
+            label2.Size = new Size(42, 17);
+            label2.TabIndex = 10;
+            label2.Text = "Code:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(20, 176);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 15);
+            label3.TabIndex = 9;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(209, 209);
+            button1.Name = "button1";
+            button1.Size = new Size(125, 34);
+            button1.TabIndex = 8;
+            button1.Text = "Enter";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(164, 137);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(214, 56);
+            textBox2.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(106, 21);
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(160, 23);
+            textBox3.TabIndex = 5;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(106, 68);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(160, 23);
+            textBox4.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(230, 114);
+            label4.Name = "label4";
+            label4.Size = new Size(83, 17);
+            label4.TabIndex = 3;
+            label4.Text = "Description: ";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(291, 69);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 17);
+            label5.TabIndex = 1;
+            label5.Text = "Status:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(21, 69);
+            label6.Name = "label6";
+            label6.Size = new Size(40, 17);
+            label6.TabIndex = 0;
+            label6.Text = "Price:";
+            // 
+            // tpSeeGuest
+            // 
+            tpSeeGuest.Location = new Point(4, 44);
+            tpSeeGuest.Name = "tpSeeGuest";
+            tpSeeGuest.Size = new Size(622, 442);
+            tpSeeGuest.TabIndex = 11;
+            tpSeeGuest.Text = "See Guest";
+            tpSeeGuest.UseVisualStyleBackColor = true;
+            // 
+            // tpCheckIn
+            // 
+            tpCheckIn.Location = new Point(4, 44);
+            tpCheckIn.Name = "tpCheckIn";
+            tpCheckIn.Size = new Size(622, 442);
+            tpCheckIn.TabIndex = 12;
+            tpCheckIn.Text = "Check In";
+            tpCheckIn.UseVisualStyleBackColor = true;
+            // 
+            // tpCheckOut
+            // 
+            tpCheckOut.Location = new Point(4, 64);
+            tpCheckOut.Name = "tpCheckOut";
+            tpCheckOut.Size = new Size(622, 422);
+            tpCheckOut.TabIndex = 13;
+            tpCheckOut.Text = "Check Out";
+            tpCheckOut.UseVisualStyleBackColor = true;
+            // 
+            // tpAlterHosting
+            // 
+            tpAlterHosting.Location = new Point(4, 64);
+            tpAlterHosting.Name = "tpAlterHosting";
+            tpAlterHosting.Size = new Size(622, 422);
+            tpAlterHosting.TabIndex = 14;
+            tpAlterHosting.Text = "Alter Hosting Information";
+            tpAlterHosting.UseVisualStyleBackColor = true;
+            // 
+            // tpSeeHosting
+            // 
+            tpSeeHosting.Location = new Point(4, 64);
+            tpSeeHosting.Name = "tpSeeHosting";
+            tpSeeHosting.Size = new Size(622, 422);
+            tpSeeHosting.TabIndex = 15;
+            tpSeeHosting.Text = "See Hosting";
+            tpSeeHosting.UseVisualStyleBackColor = true;
+            // 
             // frmIndex
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1089,11 +1089,11 @@
             tpDeleteRoom.ResumeLayout(false);
             pnDR.ResumeLayout(false);
             tpInsertHotel.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             tpInsertGuest.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
         }
 

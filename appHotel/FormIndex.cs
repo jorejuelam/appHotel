@@ -9,6 +9,8 @@ namespace appHotel
 
         //prueba del uso de githb
 
+        //2
+
         bool hotel = true;
         bool Guest = true;
 
