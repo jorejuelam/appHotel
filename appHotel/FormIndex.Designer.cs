@@ -93,6 +93,32 @@
             tpCheckOut = new TabPage();
             tpAlterHosting = new TabPage();
             tpSeeHosting = new TabPage();
+            panel1 = new Panel();
+            comboBox1 = new ComboBox();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            button1 = new Button();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            panel2 = new Panel();
+            comboBox2 = new ComboBox();
+            textBox5 = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            button2 = new Button();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
             pnMMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIcon).BeginInit();
             tcManage.SuspendLayout();
@@ -105,6 +131,10 @@
             pnCInfoARI.SuspendLayout();
             tpDeleteRoom.SuspendLayout();
             pnDR.SuspendLayout();
+            tpInsertHotel.SuspendLayout();
+            tpInsertGuest.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // pnMMenu
@@ -678,6 +708,7 @@
             // 
             // tpInsertHotel
             // 
+            tpInsertHotel.Controls.Add(panel2);
             tpInsertHotel.Location = new Point(4, 64);
             tpInsertHotel.Name = "tpInsertHotel";
             tpInsertHotel.Size = new Size(622, 422);
@@ -723,6 +754,7 @@
             // 
             // tpInsertGuest
             // 
+            tpInsertGuest.Controls.Add(panel1);
             tpInsertGuest.Location = new Point(4, 64);
             tpInsertGuest.Name = "tpInsertGuest";
             tpInsertGuest.Size = new Size(622, 422);
@@ -775,6 +807,262 @@
             tpSeeHosting.Text = "See Hosting";
             tpSeeHosting.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.WhiteSmoke;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label6);
+            panel1.Location = new Point(39, 79);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(545, 264);
+            panel1.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Available" });
+            comboBox1.Location = new Point(359, 67);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(160, 23);
+            comboBox1.TabIndex = 14;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(359, 21);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(160, 23);
+            textBox1.TabIndex = 13;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(291, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 17);
+            label1.TabIndex = 12;
+            label1.Text = "Capacity:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(21, 22);
+            label2.Name = "label2";
+            label2.Size = new Size(42, 17);
+            label2.TabIndex = 10;
+            label2.Text = "Code:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(20, 176);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 15);
+            label3.TabIndex = 9;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(209, 209);
+            button1.Name = "button1";
+            button1.Size = new Size(125, 34);
+            button1.TabIndex = 8;
+            button1.Text = "Enter";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(164, 137);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(214, 56);
+            textBox2.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(106, 21);
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(160, 23);
+            textBox3.TabIndex = 5;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(106, 68);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(160, 23);
+            textBox4.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(230, 114);
+            label4.Name = "label4";
+            label4.Size = new Size(83, 17);
+            label4.TabIndex = 3;
+            label4.Text = "Description: ";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(291, 69);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 17);
+            label5.TabIndex = 1;
+            label5.Text = "Status:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(21, 69);
+            label6.Name = "label6";
+            label6.Size = new Size(40, 17);
+            label6.TabIndex = 0;
+            label6.Text = "Price:";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.WhiteSmoke;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(comboBox2);
+            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(textBox6);
+            panel2.Controls.Add(textBox7);
+            panel2.Controls.Add(textBox8);
+            panel2.Controls.Add(label10);
+            panel2.Controls.Add(label11);
+            panel2.Controls.Add(label12);
+            panel2.Location = new Point(39, 79);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(545, 264);
+            panel2.TabIndex = 5;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Available" });
+            comboBox2.Location = new Point(359, 67);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(160, 23);
+            comboBox2.TabIndex = 14;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(359, 21);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(160, 23);
+            textBox5.TabIndex = 13;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(291, 22);
+            label7.Name = "label7";
+            label7.Size = new Size(62, 17);
+            label7.TabIndex = 12;
+            label7.Text = "Capacity:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(21, 22);
+            label8.Name = "label8";
+            label8.Size = new Size(42, 17);
+            label8.TabIndex = 10;
+            label8.Text = "Code:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(20, 176);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 15);
+            label9.TabIndex = 9;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(209, 209);
+            button2.Name = "button2";
+            button2.Size = new Size(125, 34);
+            button2.TabIndex = 8;
+            button2.Text = "Enter";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(164, 137);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(214, 56);
+            textBox6.TabIndex = 7;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(106, 21);
+            textBox7.Name = "textBox7";
+            textBox7.ReadOnly = true;
+            textBox7.Size = new Size(160, 23);
+            textBox7.TabIndex = 5;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(106, 68);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(160, 23);
+            textBox8.TabIndex = 4;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(230, 114);
+            label10.Name = "label10";
+            label10.Size = new Size(83, 17);
+            label10.TabIndex = 3;
+            label10.Text = "Description: ";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(291, 69);
+            label11.Name = "label11";
+            label11.Size = new Size(49, 17);
+            label11.TabIndex = 1;
+            label11.Text = "Status:";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.Location = new Point(21, 69);
+            label12.Name = "label12";
+            label12.Size = new Size(40, 17);
+            label12.TabIndex = 0;
+            label12.Text = "Price:";
+            // 
             // frmIndex
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -800,6 +1088,12 @@
             pnCInfoARI.PerformLayout();
             tpDeleteRoom.ResumeLayout(false);
             pnDR.ResumeLayout(false);
+            tpInsertHotel.ResumeLayout(false);
+            tpInsertGuest.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -874,5 +1168,31 @@
         private TabPage tpCheckOut;
         private TabPage tpAlterHosting;
         private TabPage tpSeeHosting;
+        private Panel panel2;
+        private ComboBox comboBox2;
+        private TextBox textBox5;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Button button2;
+        private TextBox textBox6;
+        private TextBox textBox7;
+        private TextBox textBox8;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Panel panel1;
+        private ComboBox comboBox1;
+        private TextBox textBox1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Button button1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }

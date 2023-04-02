@@ -7,6 +7,8 @@ namespace appHotel
         //630; 458 tamaño del tabcontrol final
         //622; 390 tamaño de cada tabPage final
 
+        //prueba del uso de githb
+
         bool hotel = true;
         bool Guest = true;
 
