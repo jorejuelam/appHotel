@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIndex));
             pnMMenu = new Panel();
-            btnManageHosting = new Button();
-            pnDivisorMHosting = new Panel();
             btnCheckOut = new Button();
             pnDivisorCheckOut = new Panel();
             btnManageRoom = new Button();
             pnDivisorMRoom = new Panel();
+            btnCheckIn = new Button();
+            pnDivisorCheckIn = new Panel();
+            btnManageHosting = new Button();
             btnManageGuest = new Button();
+            pnDivisorMHosting = new Panel();
             pnDivisorMGuest = new Panel();
             btnManageHotel = new Button();
             pnDivisorMHotel = new Panel();
-            btnCheckIn = new Button();
-            pnDivisorCheckIn = new Panel();
             pbIcon = new PictureBox();
             tcManage = new TabControl();
             tpSeeRooms = new TabPage();
@@ -89,7 +89,7 @@
             btnIHEnter = new Button();
             pnINR = new Panel();
             cbIHRStatus = new ComboBox();
-            txtIGRCapacity = new TextBox();
+            txtIHRCapacity = new TextBox();
             lbIHRCapacity = new Label();
             lbIHRCode = new Label();
             btnIHRAdd = new Button();
@@ -207,26 +207,6 @@
             pnMMenu.Size = new Size(178, 490);
             pnMMenu.TabIndex = 1;
             // 
-            // btnManageHosting
-            // 
-            btnManageHosting.FlatAppearance.BorderSize = 0;
-            btnManageHosting.FlatStyle = FlatStyle.Flat;
-            btnManageHosting.Location = new Point(0, 305);
-            btnManageHosting.Name = "btnManageHosting";
-            btnManageHosting.Size = new Size(178, 43);
-            btnManageHosting.TabIndex = 11;
-            btnManageHosting.Text = "Manage Hosting";
-            btnManageHosting.UseVisualStyleBackColor = true;
-            btnManageHosting.Click += btnManageHosting_Click;
-            // 
-            // pnDivisorMHosting
-            // 
-            pnDivisorMHosting.BackColor = Color.Black;
-            pnDivisorMHosting.Location = new Point(0, 349);
-            pnDivisorMHosting.Name = "pnDivisorMHosting";
-            pnDivisorMHosting.Size = new Size(178, 2);
-            pnDivisorMHosting.TabIndex = 12;
-            // 
             // btnCheckOut
             // 
             btnCheckOut.FlatAppearance.BorderSize = 0;
@@ -267,6 +247,38 @@
             pnDivisorMRoom.Size = new Size(178, 2);
             pnDivisorMRoom.TabIndex = 7;
             // 
+            // btnCheckIn
+            // 
+            btnCheckIn.FlatAppearance.BorderSize = 0;
+            btnCheckIn.FlatStyle = FlatStyle.Flat;
+            btnCheckIn.Location = new Point(0, 357);
+            btnCheckIn.Name = "btnCheckIn";
+            btnCheckIn.Size = new Size(178, 43);
+            btnCheckIn.TabIndex = 3;
+            btnCheckIn.Text = "Check In";
+            btnCheckIn.UseVisualStyleBackColor = true;
+            btnCheckIn.Click += btnCheckIn_Click;
+            // 
+            // pnDivisorCheckIn
+            // 
+            pnDivisorCheckIn.BackColor = Color.Black;
+            pnDivisorCheckIn.Location = new Point(0, 401);
+            pnDivisorCheckIn.Name = "pnDivisorCheckIn";
+            pnDivisorCheckIn.Size = new Size(178, 2);
+            pnDivisorCheckIn.TabIndex = 8;
+            // 
+            // btnManageHosting
+            // 
+            btnManageHosting.FlatAppearance.BorderSize = 0;
+            btnManageHosting.FlatStyle = FlatStyle.Flat;
+            btnManageHosting.Location = new Point(0, 305);
+            btnManageHosting.Name = "btnManageHosting";
+            btnManageHosting.Size = new Size(178, 43);
+            btnManageHosting.TabIndex = 11;
+            btnManageHosting.Text = "Manage Hosting";
+            btnManageHosting.UseVisualStyleBackColor = true;
+            btnManageHosting.Click += btnManageHosting_Click;
+            // 
             // btnManageGuest
             // 
             btnManageGuest.FlatAppearance.BorderSize = 0;
@@ -278,6 +290,14 @@
             btnManageGuest.Text = "Manage Guest";
             btnManageGuest.UseVisualStyleBackColor = true;
             btnManageGuest.Click += btnManageGuest_Click;
+            // 
+            // pnDivisorMHosting
+            // 
+            pnDivisorMHosting.BackColor = Color.Black;
+            pnDivisorMHosting.Location = new Point(0, 349);
+            pnDivisorMHosting.Name = "pnDivisorMHosting";
+            pnDivisorMHosting.Size = new Size(178, 2);
+            pnDivisorMHosting.TabIndex = 12;
             // 
             // pnDivisorMGuest
             // 
@@ -306,26 +326,6 @@
             pnDivisorMHotel.Name = "pnDivisorMHotel";
             pnDivisorMHotel.Size = new Size(178, 2);
             pnDivisorMHotel.TabIndex = 8;
-            // 
-            // btnCheckIn
-            // 
-            btnCheckIn.FlatAppearance.BorderSize = 0;
-            btnCheckIn.FlatStyle = FlatStyle.Flat;
-            btnCheckIn.Location = new Point(0, 357);
-            btnCheckIn.Name = "btnCheckIn";
-            btnCheckIn.Size = new Size(178, 43);
-            btnCheckIn.TabIndex = 3;
-            btnCheckIn.Text = "Check In";
-            btnCheckIn.UseVisualStyleBackColor = true;
-            btnCheckIn.Click += btnCheckIn_Click;
-            // 
-            // pnDivisorCheckIn
-            // 
-            pnDivisorCheckIn.BackColor = Color.Black;
-            pnDivisorCheckIn.Location = new Point(0, 401);
-            pnDivisorCheckIn.Name = "pnDivisorCheckIn";
-            pnDivisorCheckIn.Size = new Size(178, 2);
-            pnDivisorCheckIn.TabIndex = 8;
             // 
             // pbIcon
             // 
@@ -822,7 +822,7 @@
             pnINR.BackColor = Color.WhiteSmoke;
             pnINR.BorderStyle = BorderStyle.FixedSingle;
             pnINR.Controls.Add(cbIHRStatus);
-            pnINR.Controls.Add(txtIGRCapacity);
+            pnINR.Controls.Add(txtIHRCapacity);
             pnINR.Controls.Add(lbIHRCapacity);
             pnINR.Controls.Add(lbIHRCode);
             pnINR.Controls.Add(btnIHRAdd);
@@ -846,12 +846,12 @@
             cbIHRStatus.Size = new Size(160, 23);
             cbIHRStatus.TabIndex = 14;
             // 
-            // txtIGRCapacity
+            // txtIHRCapacity
             // 
-            txtIGRCapacity.Location = new Point(359, 21);
-            txtIGRCapacity.Name = "txtIGRCapacity";
-            txtIGRCapacity.Size = new Size(160, 23);
-            txtIGRCapacity.TabIndex = 13;
+            txtIHRCapacity.Location = new Point(359, 21);
+            txtIHRCapacity.Name = "txtIHRCapacity";
+            txtIHRCapacity.Size = new Size(160, 23);
+            txtIHRCapacity.TabIndex = 13;
             // 
             // lbIHRCapacity
             // 
@@ -1584,7 +1584,7 @@
         private TextBox txtIGName;
         private Label lbIGName;
         private ComboBox cbIHRStatus;
-        private TextBox txtIGRCapacity;
+        private TextBox txtIHRCapacity;
         private Label lbIHRCapacity;
         private Label lbIHRCode;
         private Label label3;
