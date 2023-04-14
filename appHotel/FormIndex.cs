@@ -196,7 +196,7 @@ namespace appHotel
 
         private void btnIHEnter_Click(object sender, EventArgs e)
         {
-            if (txtIHName.TextLength>0&&txtIHRDescription.TextLength>0&&cbIHRStatus.Text.Length>0)
+            if (txtIHName.TextLength > 0 && txtIHRDescription.TextLength > 0 && cbIHRStatus.Text.Length > 0 && txtIHRCapacity.TextLength>0)
             {
                 if (!hotel)
                 {
@@ -207,7 +207,7 @@ namespace appHotel
             }
             else
             {
-                MessageBox.Show("Debe rellenar todos los campos","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Debe rellenar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private void btnIGEnter_Click(object sender, EventArgs e)
